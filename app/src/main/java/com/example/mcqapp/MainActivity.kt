@@ -3,6 +3,7 @@ package com.example.mcqapp
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -19,16 +20,32 @@ class MainActivity : AppCompatActivity() {
         val answerdisplay: TextView = findViewById(R.id.textView3)
 
         buttonA.setOnClickListener{
-            answerdisplay.text = "Your answer: A\nWrong answer. Please try again."
+            //answerdisplay.text = "Your answer: A\nWrong answer. Please try again."
+            Toast.makeText(getApplicationContext(),
+                "Your answer: C\n" +
+                        "Wrong answer. Please try again.",
+                Toast.LENGTH_SHORT).show()
         }
         buttonB.setOnClickListener{
-            answerdisplay.text = "Your answer: B\nCongrajulashons, correct answer!"
+            //answerdisplay.text = "Your answer: B\nCongrajulashons, correct answer!"
+            Toast.makeText(getApplicationContext(),
+                "Your answer: B\n" +
+                        "Congrajulashons, correct answer!",
+                Toast.LENGTH_SHORT).show()
         }
         buttonC.setOnClickListener{
-            answerdisplay.text = "Your answer: C\nWrong answer. Please try again."
+            //answerdisplay.text = "Your answer: C\nWrong answer. Please try again."
+            Toast.makeText(getApplicationContext(),
+                "Your answer: C\n" +
+                        "Wrong answer. Please try again.",
+                Toast.LENGTH_SHORT).show()
         }
         buttonD.setOnClickListener{
-            answerdisplay.text = "Your answer: D\nWrong answer. Please try again."
+            //answerdisplay.text = "Your answer: D\nWrong answer. Please try again."
+            Toast.makeText(getApplicationContext(),
+                "Your answer: D\n" +
+                        "Wrong answer. Please try again.",
+                Toast.LENGTH_SHORT).show()
         }
         buttonReset.setOnClickListener{
             answerdisplay.text = ""
