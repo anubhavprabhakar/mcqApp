@@ -13,9 +13,10 @@
         android:text="Button"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <Button
         android:id="@+id/button2"
@@ -24,10 +25,10 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintHorizontal_bias="0.81"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <Button
         android:id="@+id/button3"
@@ -36,10 +37,10 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786" />
+        app:layout_constraintVertical_bias="0.779" />
 
     <Button
         android:id="@+id/button4"
@@ -48,10 +49,10 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/button2"
-        app:layout_constraintVertical_bias="0.422" />
+        app:layout_constraintVertical_bias="0.395" />
 
     <TextView
         android:id="@+id/textView"
