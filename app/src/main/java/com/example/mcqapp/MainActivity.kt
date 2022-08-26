@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         buttonA.setOnClickListener{
             //answerdisplay.text = "Your answer: A\nWrong answer. Please try again."
             Toast.makeText(getApplicationContext(),
-                "Your answer: C\n" +
+                "Your answer: A\n" +
                         "Wrong answer. Please try again.",
                 Toast.LENGTH_SHORT).show()
         }
