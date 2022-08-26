@@ -2,7 +2,6 @@ package com.example.mcqapp
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
@@ -16,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         val buttonC: Button = findViewById(R.id.button3)
         val buttonD: Button = findViewById(R.id.button4)
         val buttonReset: Button = findViewById(R.id.button5)
-
-        val answerdisplay: TextView = findViewById(R.id.textView3)
 
         buttonA.setOnClickListener{
             //answerdisplay.text = "Your answer: A\nWrong answer. Please try again."
@@ -47,8 +44,6 @@ class MainActivity : AppCompatActivity() {
                         "Wrong answer. Please try again.",
                 Toast.LENGTH_SHORT).show()
         }
-        buttonReset.setOnClickListener{
-            answerdisplay.text = ""
-        }
+
     }
 }
