@@ -5,11 +5,17 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.databinding.DataBindingUtil
+import com.example.mcqapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+//        binding.button2.setOnClickListener()
 
         var ans = false
 
@@ -26,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             ans = false
             selectAns.text = "Selected option: A"
         }
-        buttonB.setOnClickListener{
+        binding.button2.setOnClickListener{
             ans = true
             selectAns.text = "Selected option: B"
         }
