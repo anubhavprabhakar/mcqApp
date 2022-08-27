@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MCQapp</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="_45">Q: 45</string>
+    <string name="a_12_nb_45_nc_56_nd_99">A: 12\nB: 45\nC: 56\nD: 99</string>
+    <string name="reset">SUBMIT</string>
+</resources>
