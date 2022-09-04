@@ -2,20 +2,22 @@ package com.example.mcqapp
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
-import com.example.mcqapp.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+//        val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
 //        binding.button2.setOnClickListener()
+
+        val Question: ImageView = findViewById(R.id.imageView)
+        Question.setImageResource(R.drawable.fiftytwo)
 
         var ans = false
 
@@ -28,11 +30,14 @@ class MainActivity : AppCompatActivity() {
 
         val selectAns: TextView = findViewById(R.id.textView3)
 
+        val CorrectAns = getString(R.string.correct_ans)
+        val WrongAns = getString(R.string.wrong_ans)
+
         buttonA.setOnClickListener{
             ans = false
             selectAns.text = "Selected option: A"
         }
-        binding.button2.setOnClickListener{
+        buttonB.setOnClickListener{
             ans = true
             selectAns.text = "Selected option: B"
         }
@@ -46,13 +51,19 @@ class MainActivity : AppCompatActivity() {
         }
         buttonSubmit.setOnClickListener{
             if(ans){
-                Toast.makeText(applicationContext, "Correct Answer!", Toast.LENGTH_SHORT).show()
+                Snackbar.make(
+                    findViewById(R.id.constraint_Layout),
+                    CorrectAns,
+                    Snackbar.LENGTH_SHORT
+                ).show()
             }else{
-                Toast.makeText(applicationContext, "Wrong Answer.", Toast.LENGTH_SHORT).show()
+                Snackbar.make(
+                    findViewById(R.id.constraint_Layout),
+                    WrongAns,
+                    Snackbar.LENGTH_SHORT
+                ).show()
             }
-
         }
-
     }
 }
 //this is "resources" branch
